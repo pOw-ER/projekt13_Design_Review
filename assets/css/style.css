@@ -1,0 +1,286 @@
+/*================================================================
+                                FONTS
+================================================================*/
+@font-face {
+  font-family: "Graphik";
+  src: url("../fonts/Graphik-Regular.woff") format("woff"),
+       url("../fonts/Graphik-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Theinhardt";
+  src: url("../fonts/Theinhardt-Lt.woff") format("woff");
+}
+@font-face {
+  font-family: "Tiempos Headline";
+  src: url("../fonts/TiemposHeadline-Semibold.woff") format("woff");
+}
+
+/*================================================================
+                               DEFAULT
+================================================================*/
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+/*================================================================
+                              HEADER - NAV
+================================================================*/
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 50px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+header nav ul li {
+  padding-right: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Graphik";
+}
+header nav>a {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 5px 40px;
+  font-family: "Theinhardt";
+  font-weight: 600;
+  transition: all .9s ease;
+}
+header nav>a:hover {
+  background-color: #000;
+  color: #fff;
+}
+header h1 {
+  font-family: "Tiempos Headline";
+}
+/*Hamburger Menu*/
+header nav div {
+  font-size: 18px;
+  display: none;
+}
+/*================================================================
+                              MAIN-SECTIONs
+================================================================*/
+main section:nth-of-type(1) {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+main section:nth-of-type(1) h1 {
+  text-align: center;
+  font-family: "Graphik";
+}
+main section:nth-of-type(1) img {
+  width: 100%;
+}
+main section:nth-of-type(1)>div {
+  padding: 100px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main section:nth-of-type(1)>div>p {
+  width: 65%;
+  font-family: "Graphik";
+  font-weight: bold;
+  line-height:25px;
+}
+main section:nth-of-type(1)>div>div {
+  width: 23%;
+}
+main section:nth-of-type(1)>div>div p:nth-of-type(1){
+  font-size: 70px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+main section:nth-of-type(1)>div>div p:nth-of-type(2){
+  margin-top: 0;
+  font-family: "Theinhardt";
+  color: #9FA2A7;
+}
+/*================================================================
+                        SECTION (DELIVERABLES)
+================================================================*/
+main section:nth-of-type(2) {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 50px 50px;
+}
+main section:nth-of-type(2) img {
+  width: 45%;
+}
+main section:nth-of-type(2) div {
+  width: 45%;
+}
+main section:nth-of-type(2) div h1 {
+  font-family: "Tiempos Headline";
+  font-size: 50px;
+}
+main section:nth-of-type(2) div h4 {
+  font-family: "Graphik";
+  font-weight: 600;
+  font-size: 25px;
+}
+main section:nth-of-type(2) div p {
+  font-family: "Theinhardt";
+  font-size: 18px;
+  color: #9FA2A7;
+}
+/*================================================================
+                        SECTION (HOW IT WORKS)
+================================================================*/
+main section:nth-of-type(3){
+  margin: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #9FA2A740;
+}
+main section:nth-of-type(3) div {
+  width: 45%;
+  padding: 50px 50px;
+}
+main section:nth-of-type(3) div h1 {
+  font-family: "Tiempos Headline";
+  font-size: 50px;
+  margin-bottom: 0;
+}
+main section:nth-of-type(3) div p, section:nth-of-type(3) div ol li{
+  font-family: "Theinhardt";
+  font-size: 18px;
+  color: #848689;
+}
+main section:nth-of-type(3) img{
+  width: 45%;
+}
+/*================================================================
+                        SECTION (CRITIQUE)
+================================================================*/
+main section:nth-of-type(4) {
+  margin: 100px 0px;
+}
+main section:nth-of-type(4) h1 {
+  font-family: "Tiempos Headline";
+  font-size: 50px;
+  text-align: center;
+}
+main section:nth-of-type(4)>p {
+  font-family: "Theinhardt";
+  font-size: 15px;
+  color: #848689;
+  text-align: center;
+}
+main section:nth-of-type(4)>div {
+  width: 90%;
+  margin: 100px auto;
+  position: relative;
+}
+main section:nth-of-type(4)>div img:nth-of-type(1) {
+  width: 100%;
+}
+main section:nth-of-type(4)>div p{
+  width: 30%;
+  position: absolute;
+  bottom: -95px;
+  left: 21%;
+  font-family: "Graphik";
+  font-weight: bold;
+  line-height:35px;
+}
+main section:nth-of-type(4)>div img:nth-of-type(2) {
+  width: 40%;
+  position: absolute;
+  bottom: -150px;
+  right: 120px;
+}
+/*================================================================
+                        FOOTER
+================================================================*/
+footer {
+  margin: 200px 50px 0;
+  border-top: 1px solid #84868950;
+}
+footer h1 {
+  font-family: "Tiempos Headline";
+  font-size: 50px;
+  text-align: center;
+  margin-top: 100px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer div p {
+  align-self: flex-end;
+  font-family: "Graphik";
+}
+footer div p a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/*================================================================
+                        MEDIA QUERIES
+================================================================*/
+@media (max-width: 768px) {
+  /*================================================================
+                        HEADER-NAV
+================================================================*/
+  header nav ul {
+    display: none;
+  }
+  header nav div {
+    display: inline-block;
+  }
+  header nav>a {
+    padding: 5px 20px;
+  }
+  /*================================================================
+                        SECTION-DELIVERABLES
+================================================================*/
+  main section:nth-of-type(2) img {
+    width: 90%;
+  }
+  main section:nth-of-type(2) div {
+    width: 90%;
+  }
+/*================================================================
+                        SECTION-HOW IT WORKS
+================================================================*/
+  main section:nth-of-type(3) div {
+    width: 90%;
+  }
+  main section:nth-of-type(3) img{
+    width: 90%;
+  }
+/*================================================================
+                        SECTION-CRITIQUE
+================================================================*/
+  main section:nth-of-type(4)>div {
+    width: 100%;
+    position: static;
+  }
+  main section:nth-of-type(4)>div img:nth-of-type(1) {
+    width: 100%;
+  }
+  main section:nth-of-type(4)>div p{
+    width: 100%;
+    position: static;
+    text-align: center;
+  }
+  main section:nth-of-type(4)>div img:nth-of-type(2) {
+    width: 80%;
+    position: static;
+    display: block;
+    margin: 0px auto;
+  }
+}
